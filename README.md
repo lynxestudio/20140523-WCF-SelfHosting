@@ -23,13 +23,13 @@
 <p>1-.Abrimos <b>Visual Studio</b> y en el explorador de soluciones agregamos un proyecto del tipo <b>WCF Service Library</b>.</p>
 <p>2-. Nombramos este proyecto como: <b>Test.WCF.Services</b></p>
 <div>
-<IMG src="picture_library/wcf/fig1.png" width="600">
+<IMG src="images/fig1.png" width="600">
 </div><br>
 <p>3-.A este proyecto le agregamos dos archivos: la interfaz <i>IProductsContract</i> y la clase <i>ProductsImplementation</i>.</p>
 <p align="justify">En este código utilizamos unos ensamblados llamados <i>Tests.WCF.Services.Objects</i> y <i>Tests.WCF.Services.Data</i>  que contienen el código de datos y un <i>DTO</i>, este código lo omito en la explicación para centrarme en la construcción del WCF, sin embargo el proyecto completo lo incluyo en el código fuente de la solución.</p>
 <p>4-. Agregamos un proyecto del tipo aplicación de consola a nuestra solución, con el nombre: <b>ConsoleHostingService</b></p>
 <p><div>
-<IMG src="picture_library/wcf/fig2.png" width="600">
+<IMG src="images/fig2.png" width="600">
 </div><br></p>
 <p>5-. Utilizamos el código en la clase Program: </p>
 <p align="justify">Este código muestra la construcción de un <b>Self-Hosted Service</b> , en la línea siguiente creo el <b>Uniform Resource identifier</b> representado por la clase <a href="http://msdn.microsoft.com/en-us/library/vstudio/System.Uri(v=vs.110).aspx">URI</a>.</p>
@@ -59,21 +59,21 @@ using (host)
 <p align="justify">La flexibilidad de <b>self-hosting</b> aplica cuando las aplicaciones son <i>(in-proc)</i>, esto es que las aplicaciones están en el mismo proceso que el cliente.</p>
 <p>Es importante que antes de ejecutar el programa cliente, se ejecute primero el programa que contiene el proceso <i>ServiceHost</i> esto lo podemos configurar en VS, en el submenú <i><b>Set Startup Projects</b></i> debajo del menú <i><b>Debug</b></i> en VS.</p>
 <div>
-<IMG src="picture_library/wcf/fig4.png" width="680">
+<IMG src="images/fig4.png" width="680">
 </div><br>
 <p>Aquí la búsqueda en la tabla utilizando el <i>Query Management</i> de <i>PgAdmin</i></p>
 <div>
-<IMG src="picture_library/wcf/fig3.png" width="600">
+<IMG src="images/fig3.png" width="600">
 </div><br>
 <p>Ahora ejecutamos la misma búsqueda, solo que remotamente con la solución de VS, primero ejecutamos el proyecto <b>ConsoleHostingService</b>.</p>
 <div>
-<IMG src="picture_library/wcf/fig6.png" width="600">
+<IMG src="images/fig6.png" width="600">
 </div><br>
 <p>Inmediatamente después ejecutamos el proyecto <i>ConsoleHostingClient</i>.</p>
 <div>
-<IMG src="picture_library/wcf/fig6a.png" width="600">
+<IMG src="images/fig6a.png" width="600">
 </div><br>
 <p>Iniciamos con la búsqueda de productos, tecleamos la coincidencia a buscar y pulsamos ENTER, esto hará que se mande la petición al servicio WCF.</p>
 <div>
-<IMG src="picture_library/wcf/fig7.png" width="644">
+<IMG src="images/fig7.png" width="644">
 </div>
